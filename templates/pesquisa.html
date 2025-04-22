@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYTHON - HTML</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .geral{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            font-family: poppins;
+            background-color: darkkhaki;
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+
+        }
+        .primeiroTopico{
+            width: 300px; 
+        }
+        .corTopico{
+            background-color: rgb(127, 127, 255);
+            height: 1000px;
+            margin-top: -8px;
+            padding-left: 30px;
+            padding-right: 30px;
+
+        }
+        .corServe{
+            background-color: rgb(127, 127, 255);
+            height: 1000px;
+            margin-top: -8px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .corVantagens{
+            background-color: rgb(127, 127, 255);
+            height: 1000px;
+            margin-top: -8px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .paraServe{
+            width: 300px;
+        }
+        .vantagens{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="geral">
+        <div class="corTopico">
+            <div class="primeiroTopico">
+                <h1>O que é python ?</h1>
+                <p>Python é uma linguagem de programação de alto nível, interpretada, com sintaxe simples e fácil de aprender. Foi criada por Guido van Rossum e lançada em 1991. É usada para criar desde scripts simples até sistemas complexos.</p>
+                <img src="{{ url_for('static', filename='img/python.jpeg') }}" alt="Imagem Python" width="300px">
+            </div>
+        </div>
+
+        <div class="corServe">
+            <div class="paraServe">
+                <h1>Para que serve Python?</h1>
+                <p>Python é uma linguagem muito versátil, usada em várias áreas, como:</p>
+                <ul>
+                    <li>Desenvolvimento web (com frameworks como Django e Flask)</li>
+                    <li>Análise de dados e ciência de dados</li>
+                    <li>Inteligência Artificial e Machine Learning</li>
+                    <li>Automação de tarefas</li>
+                    <li>Desenvolvimento de jogos</li>
+                    <li>Aplicações desktop</li>
+                    <li>Robótica</li>
+                    <li>Internet das Coisas (IoT)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="corVantagens">
+            <div class="vantagens">
+              
+                <h1>Vantagens de usar Python na vida profissional:</h1>
+
+                <img src="{{ url_for('static', filename='img/vantagem.png') }}" alt="Imagem Vantagens" width="300px">
+                
+                    <ul>
+                        <li><strong>Fácil de aprender e usar:</strong> Ideal para iniciantes e para equipes que precisam desenvolver rápido.</li>
+                        <li><strong>Comunidade ativa:</strong> Muitas bibliotecas prontas e suporte online.</li>
+                        <li><strong>Alta demanda no mercado de trabalho:</strong> Python é uma das linguagens mais procuradas por empresas.</li>
+                        <li><strong>Produtividade:</strong> Permite escrever menos código para fazer mais.</li>
+                        <li><strong>Multiuso:</strong> Pode ser usada em várias áreas (web, dados, automação, etc.).</li>
+                    </ul>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYTHON - HTML</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .geral{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            font-family: poppins;
+            background-color: darkkhaki;
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+
+        }
+        .primeiroTopico{
+            width: 300px; 
+        }
+        .corTopico{
+            background-color: rgb(127, 127, 255);
+            height: 1100px;
+           
+            padding-left: 30px;
+            padding-right: 30px;
+
+        }
+        .corServe{
+            background-color: rgb(127, 127, 255);
+            height: 1100px;
+           
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .corVantagens{
+            background-color: rgb(127, 127, 255);
+            height: 1100px;
+            
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .paraServe{
+            width: 300px;
+        }
+        .vantagens{
+            width: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="geral">
+        <div class="corTopico">
+            <div class="primeiroTopico">
+                <h1> O que é POO (Programação Orientada a Objetos)?</h1>
+                <p>POO é um paradigma de programação baseado no uso de "objetos", que representam entidades do mundo real com características (atributos) e comportamentos (métodos).</p>
+                <img src="{{ url_for('static', filename='img/poo.jpeg') }}" alt="Imagem Python" width="300px">
+            </div>
+        </div>
+
+        <div class="corServe">
+            <div class="paraServe">
+                <h1>Conceitos POO</h1>
+                <img src="{{ url_for('static', filename='img/conceitos.avif') }}" alt="Imagem Python" width="300px">
+                <ul>
+                    <li><strong>Classe:</strong> É como um molde que define os atributos e comportamentos que os objetos terão.</li>
+                    <li><strong>Objeto:</strong> É uma instância da classe, ou seja, um exemplar real criado a partir do molde da classe.</li>
+                    <li><strong>Atributos:</strong> São as características ou propriedades de um objeto.</li>
+                    <li><strong>Métodos:</strong> São as ações ou comportamentos que os objetos podem executar.</li>
+                    <li><strong>Herança:</strong> Permite que uma classe herde atributos e métodos de outra, promovendo o reaproveitamento de código.</li>
+                    <li><strong>Polimorfismo:</strong> Permite que um mesmo método tenha comportamentos diferentes dependendo do contexto.</li>
+                    <li><strong>Encapsulamento:</strong> É o conceito de proteger os dados dentro de uma classe, controlando seu acesso.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="corVantagens">
+            <div class="vantagens">
+              
+                <h1>Qual a vantagem de utilizar o POO?</h1>
+                <img src="{{ url_for('static', filename='img/vantagem.png') }}" alt="Imagem Python" width="300px">
+                
+                    <ul>
+                        <li><strong>Organização do código:</strong> Mais fácil de manter e entender.</li>
+                        <li><strong>Reutilização:</strong> Classes podem ser reutilizadas em vários projetos.</li>
+                        <li><strong>Facilidade de expansão:</strong> Adicionar novas funcionalidades sem mudar muito o código existente.</li>
+                        <li><strong>Modelagem do mundo real:</strong> Facilita o desenvolvimento de sistemas que refletem o comportamento de objetos reais.</li>
+                       
+                    </ul>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
